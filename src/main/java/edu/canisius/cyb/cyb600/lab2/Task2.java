@@ -19,12 +19,14 @@ public class Task2 {
             return "";
         }
 
+
         char firstChar = parameter2.charAt(0);
         StringBuilder repeated = new StringBuilder();
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < parameter2.length() + 1; i++) {
             repeated.append(firstChar);
         }
         return repeated.append(parameter2.substring(1)).toString();
+
     }
 
     public String method3(String parameter3){
